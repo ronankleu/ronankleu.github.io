@@ -242,7 +242,7 @@
 			var polygons = data;
 			var proj = d3.geoPath().pointRadius(2);
 			// TODO: change the projection details here below - including specific parameters such as rotation, extent, etc.
-			proj.projection(projection.fitSize([width, height], polygons));
+			proj.projection(projection.fitSize.([width, height], polygons));
 
 			////////////////////////////////////////////////////
 			// Normalize based multiplyby and divideby values
