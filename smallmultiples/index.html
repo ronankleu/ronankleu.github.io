@@ -21,7 +21,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.21.0/d3-legend.min.js"></script>
 	<!-- Simple statistics for Jenks natural breaks -->
 	<script src="https://unpkg.com/simple-statistics@7.0.7/dist/simple-statistics.min.js"></script>
-	  
 
 </head>
 <body>
@@ -37,10 +36,10 @@
 
 					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a>
 						<ul class="dropdown-menu" role="menu">
-							<li><a href="#intro" class="active">About</a></li>
-							<li><a href="Ronan Kleu Resume August 2022.pdf">Resume</a></li>
+							<li><a href="../shortbio.html">About</a></li>
+							<li><a href="../files/koylu_cv_23.pdf">Resume</a></li>
 							<li class="divider"></li>
-							<li><a href="ronan-kleu@uiowa.edu">Contact</a></li>
+							<li><a href="caglar-koylu@uiowa.edu">Contact</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -54,7 +53,7 @@
 	<div class="container">
 		<div class="content">
 			<div class="row">
-					<h1>Cars in Georgia </h1>
+					<h1>Cars in Georgia. </h1>
 			</div>
 			<hr />
 			<div class="row">
@@ -120,7 +119,7 @@
 	var polygonJSONFile = 'data/Georgiatryagain.geojson'
 	// change the projection if needed *d3.geoAlbers()*
 	var projection = d3.geoAlbers();
-	var widthheightRatio = 0.8;
+	var widthheightRatio = 0.4;
 	// Relative placement of legend that ranges between 0 and 1.
 	// 0 is the start, whereas 1 i the end of each panel.
 	// If you want to put the legend on the left, then use 0.
@@ -238,7 +237,7 @@
 			var polygons = data;
 			var proj = d3.geoPath().pointRadius(2);
 			// TODO: change the projection details here below - including specific parameters such as rotation, extent, etc.
-			proj.projection(projection.fitSize.([width, height], polygons));
+			proj.projection(projection.fitSize([width, height], polygons));
 
 			////////////////////////////////////////////////////
 			// Normalize based multiplyby and divideby values
