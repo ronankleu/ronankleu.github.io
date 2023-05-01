@@ -127,7 +127,7 @@
 	var legendX = 0.84, legendY = 0.5
 
 	// id attribute and the name attribute to be used in the tooltip
-	var idAttribute = 'GEOID', nameAttribute = 'GEOID';
+	var idAttribute = 'GEOID', nameAttribute = 'FoodAccessResearchAtlasData2019_County';
 
 	// Find the abbreviations of color names from https://colorbrewer2.org/
 	var colors =  colorbrewer.YlGnBu;
@@ -147,14 +147,14 @@
   // enter below all variables that should be normalized. If you would like to multiple the variables
 	// with a constant value enter them in multiplyBy array. If there is no need for multiplication,
 	// simply enter 1 for each value in multiplyBy.
-  var attributesToBeNormalized = [att1, att2];
-	var multiplyBy = [100, 100];
-	var divideBy = ['FoodAccessResearchAtlasData2019 (3)_Pop2010', 'FoodAccessResearchAtlasData2019 (3)_Pop2010'];
+  var attributesToBeNormalized = [att1, att2, att4];
+	var multiplyBy = [100, 100,100];
+	var divideBy = ['FoodAccessResearchAtlasData2019_Pop2010', 'FoodAccessResearchAtlasData2019_Pop2010', 'FoodAccessResearchAtlasData2019_Pop2010'];
 	// if your variables are not raw counts and they are already normalized, comment out above, and
 	//uncomment below:
 	// var attributesToBeNormalized = [];
-	// var multiplyBy = [];
-	// var divideBy = [];
+	 //var multiplyBy = [];
+	 //var divideBy = [];
 
 	//DO NOT CHANGE ANYTHING BELOW THIS POINT UNLESS YOU KNOW WHAT YOU ARE DOING
 	////////////////////////////////////////////////////////////////////////////////////////////////
